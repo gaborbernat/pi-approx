@@ -8,3 +8,4 @@ author = "Bernat Gabor"
 author-email = "gaborjbernat@gmail.com"
 home-page = "https://bernat.tech"
 classifiers = ["License :: OSI Approved :: MIT License"]
+requires-python=">=3.6"
