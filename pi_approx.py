@@ -1,6 +1,6 @@
 """Helps calculating pi"""
-from .__version__ import __version__
 
+__version__ = "1.0"
 
 def approximate_pi(iteration_count: int) -> float:
     """
