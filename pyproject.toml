@@ -1,11 +1,6 @@
 [build-system]
-requires = ["flit_core >=2,<4"]
-build-backend = "flit_core.buildapi"
-
-[tool.flit.metadata]
-module = "pi_approx"
-author = "Bernat Gabor"
-author-email = "gaborjbernat@gmail.com"
-home-page = "https://bernat.tech"
-classifiers = ["License :: OSI Approved :: MIT License"]
-requires-python=">=3.6"
+requires = [
+    "setuptools >= 41.0.0",
+    "wheel >= 0.30.0",
+]
+build-backend = 'setuptools.build_meta'
