@@ -1,8 +1,5 @@
 """Helps calculating pi"""
 
-__version__ = "1.0"
-
-
 def approximate_pi(iteration_count: int) -> float:
     """
     Approximate the number 𝜋.
@@ -10,7 +7,8 @@ def approximate_pi(iteration_count: int) -> float:
     :param iteration_count: the number of iterations to run
     :return: the approximation
     """
-    sign, result = 1, 0.0
+    cdef int sign = 1
+    cdef float result = 0.0
     for at in range(iteration_count):
         result += sign / (2 * at + 1)
         sign *= -1
@@ -18,6 +16,5 @@ def approximate_pi(iteration_count: int) -> float:
 
 
 __all__ = (
-    "__version__",
     "approximate_pi",
 )

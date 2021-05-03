@@ -1,3 +1,6 @@
+from Cython.Build import cythonize
 from setuptools import setup
 
-setup()
+setup(
+    ext_modules=cythonize("pi_approx_cy.pyx"),
+)
