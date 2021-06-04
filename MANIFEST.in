@@ -1,3 +1,2 @@
-graft tests
 include pi_approx_cy.pyx
 exclude pi_approx_cy.c
